@@ -22,6 +22,7 @@ const Register = ({ state }) => {
 
   useEffect(() => {          
     const fetchUserInfo = async () => {   
+
       const user = await contract.userTrue();
       setUserInfo(user);  
           if(userInfo && account!='Not connected'){      

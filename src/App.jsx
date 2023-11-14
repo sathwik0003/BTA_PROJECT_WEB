@@ -71,13 +71,13 @@ function App() {
 
   return (
     <Routes>
-      <Route path='/' element={<Home state={state} /> }></Route>
-      <Route path='/register' element={<Register state={state} /> }></Route>
-      <Route path='/addproduct' element={<AddProduct state={state} /> }></Route>
-      <Route path='/products' element={<Products state={state} /> }></Route>
-      <Route path='/sold' element={<Sold state={state} /> }></Route>
-      <Route path='/purchased' element={<Purchased state={state} /> }></Route>
-      <Route path='/singleproduct/:itemId' element={<SingleProduc state={state} /> }
+      <Route path='/' element={state.account ? <Home state={state} /> : <Loader/>}></Route>
+      <Route path='/register' element={state.account ? <Register state={state} /> : <Loader/>}></Route>
+      <Route path='/addproduct' element={state.account ? <AddProduct state={state} /> : <Loader/>}></Route>
+      <Route path='/products' element={state.account ? <Products state={state} /> : <Loader/>}></Route>
+      <Route path='/sold' element={state.account ? <Sold state={state} /> : <Loader/>}></Route>
+      <Route path='/purchased' element={state.account ? <Purchased state={state} /> : <Loader/>}></Route>
+      <Route path='/singleproduct/:itemId' element={state.account ? <SingleProduc state={state} /> : <Loader/>}
       />
 
 
