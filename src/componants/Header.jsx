@@ -21,7 +21,7 @@ const Header = ({ state }) => {
           <a href="/addproduct">SELL</a>
         </div>
         <div className="header-option">
-          <a href="/sold">SOLD</a>
+          <a href="/sold">ONSALE</a>
         </div>
         <div className="header-option">
           <a href="/purchased">PURCHASED</a>
