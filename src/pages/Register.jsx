@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { ethers } from 'ethers';
 import Header from '../componants/Header';
 import './Register.css'
 

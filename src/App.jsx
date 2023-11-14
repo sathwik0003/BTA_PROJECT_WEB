@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { ethers } from "ethers"
 import abi from './assets/contractJson/Trash.json'
 import { Routes, Route } from 'react-router-dom';
-import Register from './pages/register';
+import Register from './pages/Register';
 import AddProduct from './pages/AddProduct';
 import Products from './pages/Products';
 import SingleProduc from './pages/SingleProduc'
