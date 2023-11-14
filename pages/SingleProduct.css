@@ -1,0 +1,104 @@
+/* SingleProduct.css */
+
+.single-product-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-image img {
+  max-width: 45%;
+  max-height: 300px;
+  object-fit: cover;
+  border: 5px solid #fff;
+  border-radius: 10px;
+}
+
+.product-details {
+  flex: 1;
+  text-align: left;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+p {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #555;
+}
+
+button {
+  margin: 6px;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #505050;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #4d4e4f;
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  .single-product-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-image img {
+    max-width: 100%;
+    max-height: 300px;
+    margin: 10px 0;
+  }
+
+  .product-details {
+    max-width: 100%;
+  }
+}
+
+/* SingleProduct.css */
+
+/* Style for the reviews container */
+.single-product-container .reviews-container {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+/* Style for individual reviews */
+.single-product-container .reviews-container .review {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+/* Optional: Style for the "SHOW REVIEWS" button */
+.single-product-container .show-reviews-button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}

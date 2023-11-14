@@ -1,0 +1,62 @@
+/* Header.css */
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  color: white;
+
+
+}
+
+.header-logo img {
+  max-width: 3rem;
+}
+
+.header-options {
+  font-size:0.7rem;
+  display: flex;
+  margin: 0 20px;
+}
+
+.header-option {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.header-option a {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.header-account {
+  font-size:0.7rem;
+  margin-left: auto;
+}
+
+/* Media Query for Responsive Design */
+@media only screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .header-logo {
+    margin-bottom: 10px;
+  }
+
+  .header-options {
+    flex-direction: column;
+    margin: 0;
+    text-align: center;
+  }
+
+  .header-option {
+    margin: 5px 0;
+  }
+
+  .header-account {
+    margin-left: 0;
+  }
+}
